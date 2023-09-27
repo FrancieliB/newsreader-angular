@@ -1,0 +1,7 @@
+<h2 mat-dialog-title>{{article.title}}</h2>
+<mat-dialog-content class="mat-typography">
+    <h3>Author: {{article.author}}</h3>
+    <p [innerHtml]="article.content"></p>
+    <p>Source: {{article.source.name}}</p>
+    <a target="_blank" [href]="article.url">{{article.url}}</a>
+</mat-dialog-content>
